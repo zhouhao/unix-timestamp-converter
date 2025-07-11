@@ -36,7 +36,7 @@ export function LiveTimestamp() {
   const currentDate = new Date(currentTimestamp * 1000)
 
   return (
-    <Card className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700 text-white border-0 shadow-xl">
+    <Card className="bg-gradient-to-r from-blue-500 to-blue-500 text-white border-0 shadow-xl">
       <CardHeader className="text-center pb-4">
         <div className="flex items-center justify-center gap-3 mb-2">
           <Clock className="h-6 w-6 animate-pulse"/>
@@ -45,10 +45,10 @@ export function LiveTimestamp() {
           </CardTitle>
         </div>
       </CardHeader>
-      <CardContent className="text-center space-y-6">
+      <CardContent className="text-center space-y-2">
         {/* Large timestamp display */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-          <div className="text-4xl md:text-5xl font-mono font-bold mb-2">
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-2">
+          <div className="text-3xl md:text-3xl font-mono font-bold mb-2">
             {currentTimestamp.toString()}
           </div>
           <Button

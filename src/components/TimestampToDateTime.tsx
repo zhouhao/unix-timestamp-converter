@@ -66,14 +66,11 @@ export function TimestampToDateTime() {
           <Input
             id="timestamp-input"
             type="text"
-            placeholder="e.g., 1672531200 or 1672531200000"
+            placeholder="Enter timestamp in seconds or milliseconds"
             value={input}
             onChange={(e) => handleInputChange(e.target.value)}
             className="font-mono"
           />
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-            Enter timestamp in seconds (10 digits) or milliseconds (13 digits)
-          </p>
         </div>
 
         <div>
